@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="RSM 0.0.1 https://github.com/leotrs/rsm" />
+    <link rel="stylesheet" type="text/css" href="/static/index.css" />
+    <link rel="stylesheet" type="text/css" href="/static/rsm.css" />
+    <title>ReStructured Manuscripts</title>
+  </head>
+
+  <body>
+
+    <header class="nav">
+      <nav class="nav-row nav-main">
+        <span class="links">
+          <span class="link-wrapper no-border"><a class="logo" href="/"><strong>:rsm:</strong></a></span>
+          <span class="link-wrapper active"><a href="/tour/markup.html">Tour</a></span>
+          <span class="link-wrapper"><a href="/">Getting Started</a></span>
+          <span class="link-wrapper"><a href="/">Contribute</a></span>
+          <span class="link-wrapper"><a href="/">Docs</a></span>
+          <span class="link-wrapper"><a href="/"><strong>Try it out</strong></a></span>
+        </span>
+        <span class="socials">
+          <a class="twitter" href="/"></a>
+          <a class="youtube" href="/"></a>
+          <a class="github" href="/"></a>
+        </span>
+      </nav>
+    </header>
+
+    <div class="sidebar-wrapper">
+
+      <aside class="sidebar">
+        <nav class="nav-col nav-side">
+          <h3 class="sidebar-header">Features</h3>
+          <ul class="sidebar-ul">
+            <li class="sidebar-li active"><a class="sidebar-link">RSM markup</a></li>
+            <li class="sidebar-li"><a class="sidebar-link">The handrail (incl. folding)</a></li>
+            <li class="sidebar-li"><a class="sidebar-link">Tooltips</a></li>
+            <li class="sidebar-li"><a class="sidebar-link">Special blocks (math, algos, code)</a></li>
+            <li class="sidebar-li"><a class="sidebar-link">Bibliography</a></li>
+            <li class="sidebar-li"><a class="sidebar-link">Structured proofs</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="content">
+
+        <section>
+          <div class="section-wrapper">
+
+            <div class="card card-full">
+              <div class="card-header">
+                <h2 class="card-title">Base language</h2>
+              </div>
+              <div class="card-p">
+                <p>At the core of ReStructured Manuscripts is the RSM markup language.  Inspired by popular languages such as Markdown, ReST, and LaTeX, RSM strives for simplicity and power.</p>
+                <p>Every RSM file starts with the <code>:manuscript:</code> tag and ends with the double colon <code>::</code>.  The double colon acts as the closing tag, and it is referred to as Halmos.</p>
+              </div>
+            </div>
+
+            <div class="code-example">
+              <div class="code-editor">
+                <code>
+                  <p class="line"><span class="code-header">:manuscript:</span></p>
+                  <p class="line">Hello, RSM!</p>
+                  <p class="line"><span class="code-header">::</span></p>
+                </code>
+              </div>
+              <div class="code-viewer">
+                <div class="manuscriptwrapper">
+                  <div class="manuscript">
+                    <section class="level-1">
+                      <div class="handrail handrail--offset">
+                        <div class="handrail__btn-container">
+                          <div class="handrail__btn handrail__btn-menu handrail__btn--relative"><span>⋮</span>
+                            <div class="options hide">
+                              <span class="option option__link">link</span>
+                              <span class="option option__tree">tree</span>
+                              <span class="option option__source">source</span>
+                            </div>
+                          </div>
+                          <div class="handrail__btn handrail__btn-toggle"><span>〉</span></div>
+                        </div>
+                        <h1>Web-First Manuscripts</h1>
+                      </div>
+                      <div class="author">
+                        <p>Melvin J. Noir</p>
+                        <p>ACME University</p>
+                        <p><a href="mailto:mel@acme.edu">mel@acme.edu</a></p>
+                      </div>
+                      <div class="abstract">
+                        <div class="handrail handrail--offset">
+                          <div class="handrail__btn-container">
+                            <div class="handrail__btn handrail__btn-menu handrail__btn--relative"><span>⋮</span>
+                              <div class="options hide">
+                                <span class="option option__link">link</span>
+                                <span class="option option__tree">tree</span>
+                                <span class="option option__source">source</span>
+                              </div>
+                            </div>
+                            <div class="handrail__btn handrail__btn-toggle"><span>〉</span></div>
+                          </div>
+                          <h3>Abstract</h3>
+                        </div>
+                        <p class="paragraph">Transform the way you <span class="span"><strong>publish</strong></span>.</p>
+                      </div>
+                      <figure class="figure">
+                        <img src="/static/rsm-tag.png" alt="Figure 1." onload="this.width*=0.8;">
+                        <figcaption>
+                          <span class="span"><strong>Figure 1. </strong></span>Simple scientific authoring for the web.
+                        </figcaption>
+                      </figure>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-footer">
+              <p>The base language contains one special character (the colon), three types of tags (<span class="code-block">block</span>, <span class="code-inline">inline</span> and <span class="code-meta">meta</span>), and only a handful of syntax rules. <a href="tour/">Learn more</a>.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <div class="section-wrapper">
+
+            <div class="card card-full">
+              <div class="card-header">
+                <h2 class="card-title">Shorthand</h2>
+              </div>
+              <div class="card-p">
+                <p>At the core of ReStructured Manuscripts is the RSM markup language.  Inspired by popular languages such as Markdown, ReST, and LaTeX, RSM strives for simplicity and power.</p>
+              </div>
+            </div>
+
+            <div class="code-example">
+              <div class="code-editor">
+                <code>
+                  <p class="line"><span class="code-header">:manuscript:</span></p>
+                  <p class="line"><span class="code-meta">:title:</span> Web-First Manuscripts</p>
+                  <p class="line">&nbsp;</p>
+                  <p class="line"><span class="code-block">:author:</span></p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-meta">:name:</span> Melvin J. Noir</p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-meta">:affiliation:</span> ACME University</p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-meta">:email:</span> mel@acme.edu</p>
+                  <p class="line"><span class="code-block">::</span></p>
+                  <p class="line">&nbsp;</p>
+                  <p class="line"><span class="code-block">:abstract:</span></p>
+                  <p class="line">&nbsp;&nbsp;Transform&nbsp;the&nbsp;way&nbsp;you&nbsp;<strong>*publish*</strong>.</p>
+                  <p class="line"><span class="code-block">::</span></p>
+                  <p class="line">&nbsp;</p>
+                  <p class="line"><span class="code-block">:figure:</span></p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-meta">:path:</span>&nbsp;rsm-tag.png</p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-meta">:scale:</span>&nbsp;0.8</p>
+                  <p class="line">&nbsp;&nbsp;<span class="code-inline">:caption:</span>&nbsp;Simple&nbsp;scientific</p>
+                  <p class="line">&nbsp;&nbsp;authoring&nbsp;for&nbsp;the&nbsp;web.</p>
+                  <p class="line"><span class="code-block">::</span></p>
+                  <p class="line">&nbsp;</p>
+                  <p class="line"><span class="code-header">::</span></p>
+                </code>
+              </div>
+              <div class="code-viewer">
+                <div class="manuscriptwrapper">
+                  <div class="manuscript">
+                    <section class="level-1">
+                      <div class="handrail handrail--offset">
+                        <div class="handrail__btn-container">
+                          <div class="handrail__btn handrail__btn-menu handrail__btn--relative"><span>⋮</span>
+                            <div class="options hide">
+                              <span class="option option__link">link</span>
+                              <span class="option option__tree">tree</span>
+                              <span class="option option__source">source</span>
+                            </div>
+                          </div>
+                          <div class="handrail__btn handrail__btn-toggle"><span>〉</span></div>
+                        </div>
+                        <h1>Web-First Manuscripts</h1>
+                      </div>
+                      <div class="author">
+                        <p>Melvin J. Noir</p>
+                        <p>ACME University</p>
+                        <p><a href="mailto:mel@acme.edu">mel@acme.edu</a></p>
+                      </div>
+                      <div class="abstract">
+                        <div class="handrail handrail--offset">
+                          <div class="handrail__btn-container">
+                            <div class="handrail__btn handrail__btn-menu handrail__btn--relative"><span>⋮</span>
+                              <div class="options hide">
+                                <span class="option option__link">link</span>
+                                <span class="option option__tree">tree</span>
+                                <span class="option option__source">source</span>
+                              </div>
+                            </div>
+                            <div class="handrail__btn handrail__btn-toggle"><span>〉</span></div>
+                          </div>
+                          <h3>Abstract</h3>
+                        </div>
+                        <p class="paragraph">Transform the way you <span class="span"><strong>publish</strong></span>.</p>
+                      </div>
+                      <figure class="figure">
+                        <img src="/static/rsm-tag.png" alt="Figure 1." onload="this.width*=0.8;">
+                        <figcaption>
+                          <span class="span"><strong>Figure 1. </strong></span>Simple scientific authoring for the web.
+                        </figcaption>
+                      </figure>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-footer">
+              <p>The RSM markup language is designed with simplicity in mind. The base language contains one special character (the colon), three types of tags (<span class="code-block">block</span>, <span class="code-inline">inline</span> and <span class="code-meta">meta</span>), and only a handful of syntax rules. <a href="tour/">Learn more</a>.</p>
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <a class="logo logo-light" href="/"><strong>:rsm:</strong></a>
+        <p>Made with <span class="heart">❤</span> by leotrs</p>
+        <span class="socials">
+          <a class="twitter-light" href="/"></a>
+          <a class="youtube-light" href="/"></a>
+          <a class="github-light" href="/"></a>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+
+</html>
