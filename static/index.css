@@ -171,6 +171,14 @@ nav span.links a:hover {
     color: var(--link-color-hover)
 }
 
+.card-title a {
+    color: var(--drk-gray);
+}
+
+.card-title a:hover {
+    color: var(--link-color-hover)
+}
+
 section.hero {
     text-align: center;
     margin: 9rem auto;
@@ -267,11 +275,6 @@ h1.main {
 .card-row {
     display: flex;
     justify-content: space-between;
-}
-
-.card-row-links > .card:hover > .card-header {
-    color: var(--link-color-hover);
-    cursor: pointer;
 }
 
 section .card-row:first-of-type:not(:last-of-type) {
