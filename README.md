@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/23a5ff92-df6f-455d-b4e6-2dd859b28f55/deploy-status)](https://app.netlify.com/sites/rsm-site/deploys)
 
 
-Landing page for ReStructured Manuscripts.  See it live [here](https://write-rsm.org).
+Landing page for ReStructured Manuscripts.  See it live [here](https://www.write-rsm.org).
 
 Subdomains:
 + [www.write-rsm.org/]:  Same as this repo.  Manually written HTML/CSS deployed on Netlify.
